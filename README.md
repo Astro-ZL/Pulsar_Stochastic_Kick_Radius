@@ -13,7 +13,7 @@ The goal of this project is to constrain the effective kick radius in a stochast
 ```text
 .
 ├── data/
-│   └── pulsar_sample_table.csv
+│   └── parallaxes_1.xlsx
 ├── notebooks/
 │   ├── sample_selection.ipynb
 │   ├── bayesian_analysis_young_47.ipynb
