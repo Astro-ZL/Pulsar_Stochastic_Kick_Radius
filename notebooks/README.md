@@ -1,0 +1,1 @@
+This folder contains the Jupyter notebooks used for sample selection, Bayesian population-synthesis analysis, comparison with the single-kick framework, and generation of the figures presented in the paper.
