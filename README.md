@@ -1,5 +1,5 @@
 # Data and Bayesian population-synthesis codes for constraining the effective kick radius in a stochastic pulsar natal-kick model.
-````markdown
+
 # Pulsar Stochastic Natal-kick Radius
 
 This repository contains the data table and Jupyter notebooks used for the Bayesian population-synthesis analysis in the paper:
