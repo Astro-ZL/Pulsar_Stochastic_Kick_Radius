@@ -8,20 +8,6 @@ This repository contains the data table and Jupyter notebooks used for the Bayes
 
 The goal of this project is to constrain the effective kick radius in a stochastic pulsar natal-kick framework. In this model, the intrinsic natal velocity and birth spin of a pulsar arise from the cumulative effect of multiple independent impulses, rather than from a single off-center kick. The analysis is performed in the observable space of pulsar spin period and transverse velocity.
 
-## Repository contents
-
-```text
-.
-├── data/
-│   └── parallaxes_1.xlsx
-├── notebooks/
-│   ├── sample_selection.ipynb
-│   ├── bayesian_analysis_young_47.ipynb
-│   ├── bayesian_analysis_full_77.ipynb
-│   └── bayesian_analysis_single_kick.ipynb
-└── README.md
-````
-
 ### Data table
 
 The `data/` directory contains the curated pulsar sample used in this work. The table includes pulsar spin periods, parallax-based distance information, proper motions, transverse velocities, and sample labels used for the Bayesian analysis.
