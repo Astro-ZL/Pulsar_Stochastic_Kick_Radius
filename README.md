@@ -20,9 +20,9 @@ The `data/` directory contains the curated pulsar sample used in this work. The 
 
 The Bayesian inference is carried out with separate notebooks for different samples and model assumptions:
 
-* `bayesian_analysis_young_47.ipynb`: Bayesian population-synthesis analysis for the young pulsar sample.
-* `bayesian_analysis_full_77.ipynb`: Bayesian population-synthesis analysis for the full isolated-pulsar sample.
-* `bayesian_analysis_single_kick.ipynb`: Bayesian analysis under the single-kick framework, used for comparison with the stochastic-kick model.
+* `velocity_period_simulated_47.ipynb`: Bayesian population-synthesis analysis for the young pulsar sample.
+* `velocity_period_simulated_77.ipynb`: Bayesian population-synthesis analysis for the full isolated-pulsar sample.
+* `Code_Figure_3.ipynb`: Bayesian analysis under the single-kick framework, used for comparison with the stochastic-kick model.
 
 ## Method overview
 
@@ -75,9 +75,9 @@ jupyter notebook
 A typical workflow is:
 
 1. Run `sample_selection.ipynb` to reproduce the selected pulsar samples.
-2. Run `bayesian_analysis_young_47.ipynb` for the young pulsar sample.
-3. Run `bayesian_analysis_full_77.ipynb` for the full isolated-pulsar sample.
-4. Run `bayesian_analysis_single_kick.ipynb` for the comparison with the single-kick model.
+2. Run `velocity_period_simulated_47.ipynb` for the young pulsar sample.
+3. Run `velocity_period_simulated_77.ipynb` for the full isolated-pulsar sample.
+4. Run `Code_Fiugre_3.ipynb` for the comparison with the single-kick model.
 
 Because the Bayesian analysis involves Monte Carlo sampling, the exact posterior samples may vary slightly with random seed and computational settings.
 
@@ -85,7 +85,7 @@ Because the Bayesian analysis involves Monte Carlo sampling, the exact posterior
 
 If you use this repository, please cite the corresponding paper: 
 
-Li Z, Liu X, You Z-Q, Zhu X-J. *Joint Bayesian Constraints on the Effective Kick Radius in a Stochastic Natal-kick Model*. Submitted, 2026.
+Li Z, Liu X, You Z-Q, Zhu X-J. *A 9 km Effective Kick Radius for Pulsars: Constraints from a Stochastic Natal-Kick Framework1*. Submitted, 2026.
 
 ## Data availability
 
