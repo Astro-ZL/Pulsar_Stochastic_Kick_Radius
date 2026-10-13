@@ -1,0 +1,16 @@
+name: pulsar-kick-period
+channels:
+  - defaults
+dependencies:
+  - python=3.13.9
+  - pip
+  - pip:
+    - numpy==2.3.3
+    - scipy==1.16.2
+    - matplotlib==3.10.6
+    - pandas==2.3.3
+    - astropy==6.1.7
+    - dynesty==3.0.0
+    - corner==2.2.3
+    - openpyxl==3.1.5
+    - Pillow==11.3.0

@@ -1,0 +1,30 @@
+<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>03_single_kick_comparison</title><style>body{max-width:1100px;margin:40px auto;padding:0 24px;font:16px/1.6 system-ui;color:#17212b}pre{white-space:pre-wrap;background:#f3f5f7;padding:18px;border-radius:6px;overflow:auto}section{margin:24px 0}img{max-width:100%}.markdown{white-space:pre-wrap;background:#fff}small{color:#667}</style><h1>03_single_kick_comparison</h1><small>Notebook with saved outputs.</small><section><pre class="markdown"># Single-kick comparison
+Read the six-parameter posterior used in the left panel of Figure 3. Set RUN_FULL_FIT=True to run the fitting workflow.</pre></section><section><pre class="code">from pathlib import Path
+import sys
+ROOT=next(p for p in [Path.cwd(),*Path.cwd().parents] if (p/&#x27;config.json&#x27;).is_file())
+sys.path.insert(0,str(ROOT/&#x27;scripts&#x27;))
+print(&#x27;Archive root:&#x27;,ROOT)
+</pre><pre>Archive root: /home/lz/work/pulsar_kick_period/Article_Code_reader_staging_20261012T100844Z
+</pre></section><section><pre class="code">import pickle
+import numpy as np
+x=pickle.load((ROOT/&#x27;results/single_kick/posterior_LSR_47_samples.pkl&#x27;).open(&#x27;rb&#x27;))
+cols=[&#x27;R_kick_km&#x27;,&#x27;alpha_rad&#x27;,&#x27;beta_rad&#x27;,&#x27;gamma_rad&#x27;,&#x27;P_birth_s&#x27;,&#x27;tau_tilde&#x27;]
+print(&#x27;Frozen posterior shape:&#x27;,x.shape)
+for name,q in zip(cols,np.percentile(x,[16,50,84],axis=0).T):
+    print(name,&#x27;16/50/84:&#x27;,q)
+</pre><pre>Frozen posterior shape: (4818, 6)
+R_kick_km 16/50/84: [0.55712712 2.24338406 6.01535993]
+alpha_rad 16/50/84: [0.6334031  1.54605564 2.47066047]
+beta_rad 16/50/84: [0.97325442 1.571818   2.20429431]
+gamma_rad 16/50/84: [0.88277361 1.64857616 2.32291772]
+P_birth_s 16/50/84: [0.11890875 0.20186659 0.30272575]
+tau_tilde 16/50/84: [0.14477599 0.45957646 0.78667182]
+</pre></section><section><pre class="markdown">## Fitting
+The model and likelihood are implemented in src/single_kick/run_single_kick.py.</pre></section><section><pre class="code">RUN_FULL_FIT=False
+if RUN_FULL_FIT:
+    import subprocess
+    subprocess.run([sys.executable,str(ROOT/&#x27;src/single_kick/run_single_kick.py&#x27;),&#x27;--execute-fit&#x27;,&#x27;--ncores&#x27;,&#x27;8&#x27;],check=True)
+else:
+    print(&#x27;Reading supplied posterior; set RUN_FULL_FIT=True to run the fit.&#x27;)
+</pre><pre>Reading supplied posterior; set RUN_FULL_FIT=True to run the fit.
+</pre></section>

@@ -1,0 +1,21 @@
+{
+  "python": "3.13.9 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 19:16:10) [GCC 11.2.0]",
+  "executable": "/home/lz/miniconda3/envs/lz/bin/python",
+  "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+  "cpu_count": 512,
+  "captured_at": "2026-10-12T09:05:57.405187+00:00",
+  "packages": {
+    "numpy": "2.3.3",
+    "scipy": "1.16.2",
+    "matplotlib": "3.10.6",
+    "pandas": "2.3.3",
+    "astropy": "6.1.7",
+    "dynesty": "3.0.0",
+    "corner": "2.2.3",
+    "openpyxl": "3.1.5",
+    "Pillow": "11.3.0",
+    "ipykernel": "7.1.0",
+    "IPython": "9.6.0",
+    "PyYAML": "6.0.3"
+  }
+}

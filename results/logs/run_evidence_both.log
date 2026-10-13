@@ -1,0 +1,34 @@
+nohup: ignoring input
+
+>>> Running dynesty: full model
+>>> ndim=8, nlive=1000, N_SIM=20000, dlogz=0.05
+>>> ncores=500
+>>> multiprocessing enabled
+>>> deterministic common-random-number likelihood enabled
+
+
+>>> full model finished in 95.22 min
+>>> logZ(full) = -46.900310 +/- 0.093343
+>>> Saved dynesty result: /home/lz/work/pulsar_kick_period/run_code_py/output_dynesty/dynesty_results_full.pkl
+>>> Saved equal-weight posterior: /home/lz/work/pulsar_kick_period/run_code_py/output_dynesty/posterior_equal_full.pkl
+
+>>> Running dynesty: zero model
+>>> ndim=4, nlive=800, N_SIM=20000, dlogz=0.05
+>>> ncores=500
+>>> multiprocessing enabled
+>>> deterministic common-random-number likelihood enabled
+
+
+>>> zero model finished in 146.63 min
+>>> logZ(zero) = -49.081564 +/- 0.118903
+>>> Saved dynesty result: /home/lz/work/pulsar_kick_period/run_code_py/output_dynesty/dynesty_results_zero.pkl
+>>> Saved equal-weight posterior: /home/lz/work/pulsar_kick_period/run_code_py/output_dynesty/posterior_equal_zero.pkl
+
+======================================================================
+Bayesian evidence comparison
+======================================================================
+logZ_full = -46.90031030 +/- 0.09334257
+logZ_zero = -49.08156350 +/- 0.11890340
+logBF = logZ_full - logZ_zero = 2.18125320 +/- 0.15116499
+======================================================================
+>>> Saved summary: /home/lz/work/pulsar_kick_period/run_code_py/output_dynesty/bayes_factor_summary.txt

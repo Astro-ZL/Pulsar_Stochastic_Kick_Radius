@@ -1,0 +1,44 @@
+<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>00_archive_overview</title><style>body{max-width:1100px;margin:40px auto;padding:0 24px;font:16px/1.6 system-ui;color:#17212b}pre{white-space:pre-wrap;background:#f3f5f7;padding:18px;border-radius:6px;overflow:auto}section{margin:24px 0}img{max-width:100%}.markdown{white-space:pre-wrap;background:#fff}small{color:#667}</style><h1>00_archive_overview</h1><small>Notebook with saved outputs.</small><section><pre class="markdown"># Pulsar stochastic-kick analysis
+Read the input samples and summarize the supplied posterior and Bayesian evidence results.</pre></section><section><pre class="code">from pathlib import Path
+import sys
+ROOT=next(p for p in [Path.cwd(),*Path.cwd().parents] if (p/&#x27;config.json&#x27;).is_file())
+sys.path.insert(0,str(ROOT/&#x27;scripts&#x27;))
+print(&#x27;Archive root:&#x27;,ROOT)
+</pre><pre>Archive root: /home/lz/work/pulsar_kick_period/Article_Code_reader_staging_20261012T100844Z
+</pre></section><section><pre class="code">import json
+import numpy as np
+from prepare_observations import selected_catalog
+df=selected_catalog()
+print(&#x27;Full sample:&#x27;,len(df),&#x27;young sample:&#x27;,int((df[&#x27;Age(10**7)&#x27;]&lt;1).sum()))
+for n in [47,77]:
+    cloud=np.loadtxt(ROOT/f&#x27;data/vpec_lsr_samples_matrix_{n}x100.txt&#x27;)
+    print(&#x27;Velocity cloud&#x27;,n,cloud.shape,&#x27;km/s&#x27;)
+</pre><pre>Full sample: 77 young sample: 47
+Velocity cloud 47 (47, 100) km/s
+Velocity cloud 77 (77, 100) km/s
+</pre></section><section><pre class="markdown">## Posterior summaries
+Medians and 16th/84th percentiles of the post-burn-in samples.</pre></section><section><pre class="code">from summarize_saved import model_rows,evidence_rows
+rows=model_rows()
+for r in rows:
+    if r[&#x27;parameter&#x27;]==&#x27;R_eff&#x27;:
+        print(r[&#x27;sample&#x27;],r[&#x27;velocity_model&#x27;],r[&#x27;structure&#x27;],f&quot;R_eff={r[&#x27;median&#x27;]:.4f} +{r[&#x27;err_plus&#x27;]:.4f} -{r[&#x27;err_minus&#x27;]:.4f} km&quot;)
+</pre><pre>47 LN fixed R_eff=9.2193 +3.8613 -3.7802 km
+47 LN marginalized R_eff=9.3948 +4.0225 -4.0602 km
+47 G fixed R_eff=9.3391 +4.1427 -4.1196 km
+47 G marginalized R_eff=10.0621 +3.9904 -4.4786 km
+47 M fixed R_eff=9.5120 +4.2279 -4.6250 km
+47 M marginalized R_eff=9.1429 +3.8021 -4.0176 km
+77 LN fixed R_eff=9.4995 +3.6842 -3.4982 km
+77 LN marginalized R_eff=9.3266 +3.5152 -3.3802 km
+77 G fixed R_eff=9.6978 +3.4791 -3.7848 km
+77 G marginalized R_eff=9.7568 +3.9614 -3.7221 km
+77 M fixed R_eff=8.9946 +3.3847 -3.1331 km
+77 M marginalized R_eff=9.8195 +3.3397 -3.7071 km
+</pre></section><section><pre class="code">for r in evidence_rows():
+    print(r[&#x27;model&#x27;],f&quot;lnBF={r[&#x27;lnBF&#x27;]:.8f} +/- {r[&#x27;lnBF_error&#x27;]:.8f}; BF={r[&#x27;BF&#x27;]:.5f}&quot;, &#x27;N_sim&#x27;,r[&#x27;n_sim&#x27;],&#x27;nlive&#x27;,r[&#x27;nlive_full&#x27;],r[&#x27;nlive_null&#x27;],&#x27;dlogz&#x27;,r[&#x27;dlogz&#x27;])
+</pre><pre>maxwell_fixed lnBF=2.18125320 +/- 0.15116499; BF=8.85740 N_sim 20000 nlive 1000 800 dlogz 0.05
+maxwell_marginalized lnBF=2.19039819 +/- 0.15096938; BF=8.93877 N_sim 20000 nlive 1000 800 dlogz 0.05
+lognormal_fixed lnBF=2.17295091 +/- 0.16073494; BF=8.78417 N_sim 20000 nlive 1000 800 dlogz 0.05
+gamma_fixed lnBF=2.30578867 +/- 0.16013655; BF=10.03209 N_sim 20000 nlive 1000 800 dlogz 0.05
+</pre></section><section><pre class="markdown">## Manuscript figures
+Figure 1: radius comparison. Figure 2: Maxwellian corner plot. Figure 3: predictive comparison. Figure A1: LSR velocity comparison. The PDFs are in Figures/.</pre></section>

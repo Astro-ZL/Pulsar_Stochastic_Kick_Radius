@@ -1,0 +1,91 @@
+{
+  "input_notebook_sha256": "429e9cc08f8ca4a915a1984c29baca49c72e1a0d9b2573fadc4c8f244e7ef8f2",
+  "velocity_notebook_sha256": "1ec8d87ccc4878c69a875da2199e1b37855fe7841f7d52ba5f164d6bed383af4",
+  "inputs": [
+    {
+      "file": "data/lorimer2006/distance_lorimerC_samples_matrix_77x10000.txt",
+      "source_filename": "distance_lorimerC_samples_matrix_77x100.txt",
+      "sha256": "6f2cf09982e55fef6416d5141f00b03b1fe8ab8f9d2bff511469c4b92d518109"
+    },
+    {
+      "file": "data/lorimer2006/distance_lorimerC_quantile_cloud_77x100.txt",
+      "source_filename": "distance_lorimerC_quantile_cloud_77x100.txt",
+      "sha256": "32b5f2a14cc5ef6bb6033a1beaf800b44c2d13760565a4495acb596bcbde3449"
+    },
+    {
+      "file": "data/lorimer2006/distance_lorimerC_median_77.txt",
+      "source_filename": "distance_lorimerC_median_77.txt",
+      "sha256": "dbcb048ec31e5b959942b388b47062c396b271e60a6e2e9006a03b684448b248"
+    },
+    {
+      "file": "data/lorimer2006/distance_lorimerC_err_low_77.txt",
+      "source_filename": "distance_lorimerC_err_low_77.txt",
+      "sha256": "b421f1bbbfc38c890b6666c890cd738c7312352751fdaa978d8d53bcedb6f2de"
+    },
+    {
+      "file": "data/lorimer2006/distance_lorimerC_err_up_77.txt",
+      "source_filename": "distance_lorimerC_err_up_77.txt",
+      "sha256": "ab789082216efa1536cc1b46c843735b9d95258709266624680af777733a08c4"
+    },
+    {
+      "file": "data/lorimer2006/vtrans_helio_lorimerC_samples_matrix_77x10000.txt",
+      "source_filename": "vtrans_helio_lorimerC_samples_matrix_77x100.txt",
+      "sha256": "844f99a3788f625ff71361187370e192d543249682e9c78b802f3c84d2ec8c8d"
+    },
+    {
+      "file": "data/lorimer2006/vtrans_helio_lorimerC_quantile_cloud_77x100.txt",
+      "source_filename": "vtrans_helio_lorimerC_quantile_cloud_77x100.txt",
+      "sha256": "9abcfeac404efd4ba1199ecbc0c3541127963a6105aff9018a3efedfce3ab5bd"
+    },
+    {
+      "file": "data/lorimer2006/vtrans_helio_lorimerC_median_77.txt",
+      "source_filename": "vtrans_helio_lorimerC_median_77.txt",
+      "sha256": "3536cf96b8922cd76c63bb1dc76b6c883c643a092d3f7704d97d8dccea78b6f7"
+    },
+    {
+      "file": "data/lorimer2006/vtrans_helio_lorimerC_err_low_77.txt",
+      "source_filename": "vtrans_helio_lorimerC_err_low_77.txt",
+      "sha256": "30aff18d2078b922375ecd950b5c76f5dc975d617c8b503225c6113815031232"
+    },
+    {
+      "file": "data/lorimer2006/vtrans_helio_lorimerC_err_up_77.txt",
+      "source_filename": "vtrans_helio_lorimerC_err_up_77.txt",
+      "sha256": "1f5e31897b2e44ff5695c9fee9b06d85fad8a07aa5daf1d1a69b9c5df53c03b1"
+    },
+    {
+      "file": "data/lorimer2006/vpec_lsr_lorimerC_samples_matrix_77x10000.txt",
+      "source_filename": "vpec_lsr_lorimerC_samples_matrix_77x100.txt",
+      "sha256": "50604d529bb1afc93d5ee6b3167afb42def44fef23027bdd5f50842ef40a9d91"
+    },
+    {
+      "file": "data/lorimer2006/vpec_lsr_lorimerC_quantile_cloud_77x100.txt",
+      "source_filename": "vpec_lsr_lorimerC_quantile_cloud_77x100.txt",
+      "sha256": "eb95da3b9e5c399dae7f66410a7d561ab64c63cfe2183a33e0094cfd87897c46"
+    },
+    {
+      "file": "data/lorimer2006/vpec_lsr_lorimerC_median_77.txt",
+      "source_filename": "vpec_lsr_lorimerC_median_77.txt",
+      "sha256": "ce82f2aaf9d8f9b78bf517f21acd909240e6269b70d8d070816d583c7484c400"
+    },
+    {
+      "file": "data/lorimer2006/vpec_lsr_lorimerC_err_low_77.txt",
+      "source_filename": "vpec_lsr_lorimerC_err_low_77.txt",
+      "sha256": "15218ba2f438610e1a80361354dc33f053b264213ba58477f3d161e648ab9932"
+    },
+    {
+      "file": "data/lorimer2006/vpec_lsr_lorimerC_err_up_77.txt",
+      "source_filename": "vpec_lsr_lorimerC_err_up_77.txt",
+      "sha256": "562f34e7c6aa387af02cd4564bd7ae2d1871fbd5679bec17a7ebb3b4c02f263b"
+    },
+    {
+      "file": "data/lorimer2006/lorimerC_distance_velocity_summary_77.csv",
+      "source_filename": "lorimerC_distance_velocity_summary_77.csv",
+      "sha256": "1988475f89b425bb05b61a3f3cb774bef377f9ae80c830f850af12e32d7bda2e"
+    },
+    {
+      "file": "data/lorimer2006/vpec_lsr_lorimerC_quantile_cloud_77x100_summary.txt",
+      "source_filename": "vpec_lsr_lorimerC_quantile_cloud_77x100_summary.txt",
+      "sha256": "803d6e5d6dabdb3512834c17e05175a1f7c987dcf60747b9baf0d29ed57e048d"
+    }
+  ]
+}

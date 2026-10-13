@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "Please cite this repository and the associated manuscript when using these materials."
+type: software
+title: "Analysis materials for A 9 km Effective Kick Radius for Pulsars: Constraints from a Stochastic Natal-Kick Framework"
+version: 1.0.0
+authors:
+  - family-names: Li
+    given-names: Zheng
+    orcid: "https://orcid.org/0000-0002-5755-7737"
+repository-code: "https://github.com/Astro-ZL/Pulsar_Stochastic_Kick_Radius"
+license: MIT
+abstract: "Analysis code, notebooks, observational inputs, posterior samples, Bayesian evidence results and figures for the pulsar stochastic natal-kick study."

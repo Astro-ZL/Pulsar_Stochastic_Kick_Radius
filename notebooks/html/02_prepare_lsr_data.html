@@ -1,0 +1,27 @@
+<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>02_prepare_lsr_data</title><style>body{max-width:1100px;margin:40px auto;padding:0 24px;font:16px/1.6 system-ui;color:#17212b}pre{white-space:pre-wrap;background:#f3f5f7;padding:18px;border-radius:6px;overflow:auto}section{margin:24px 0}img{max-width:100%}.markdown{white-space:pre-wrap;background:#fff}small{color:#667}</style><h1>02_prepare_lsr_data</h1><small>Notebook with saved outputs.</small><section><pre class="markdown"># LSR velocity preprocessing
+Prepare the parallax-based velocities for the 77-source sample and the 47-source young subsample. Outputs are written to reproduced/data/.</pre></section><section><pre class="code">from pathlib import Path
+import sys
+ROOT=next(p for p in [Path.cwd(),*Path.cwd().parents] if (p/&#x27;config.json&#x27;).is_file())
+sys.path.insert(0,str(ROOT/&#x27;scripts&#x27;))
+print(&#x27;Archive root:&#x27;,ROOT)
+</pre><pre>Archive root: /home/lz/work/pulsar_kick_period/Article_Code_reader_staging_20261012T100844Z
+</pre></section><section><pre class="code">from prepare_observations import selected_catalog
+df=selected_catalog()
+print(df[[&#x27;Jname&#x27;,&#x27;Dist&#x27;,&#x27;Period&#x27;,&#x27;Age(10**7)&#x27;]].head().to_string(index=False))
+print(&#x27;Selected&#x27;,len(df),&#x27;sources&#x27;)
+</pre><pre>      Jname  Dist  Period  Age(10**7)
+ J0034-0721 0.930   0.943       3.650
+ J0040+5716 0.102   1.118       0.615
+ J0055+5117 0.350   2.115       0.351
+ J0102+6537 0.400   1.679       0.447
+J0108-1431  4.200   0.808      32.200
+Selected 77 sources
+</pre></section><section><pre class="code">RUN_PREPROCESS=False
+if RUN_PREPROCESS:
+    import subprocess
+    subprocess.run([sys.executable,str(ROOT/&#x27;scripts/prepare_observations.py&#x27;)],check=True)
+else:
+    print(&#x27;Frozen inputs available; set RUN_PREPROCESS=True to rerun.&#x27;)
+</pre><pre>Frozen inputs available; set RUN_PREPROCESS=True to rerun.
+</pre></section><section><pre class="markdown">## Calculation settings
+Astropy frame v4.0, 100 draws per source and base seed 20260610. Proper motions are held fixed. The catalog column Dist stores parallax in mas. See docs/DATA_DICTIONARY.md for units and selection.</pre></section>

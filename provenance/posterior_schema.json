@@ -1,0 +1,652 @@
+[
+  {
+    "path": "results/evidence/gamma_fixed/posterior_equal_full.pkl",
+    "portable_path": "results/portable_npz/evidence/gamma_fixed/posterior_equal_full.npz",
+    "shape": [
+      13358,
+      9
+    ],
+    "columns": [
+      "k_gamma",
+      "theta_gamma",
+      "R_eff",
+      "zeta",
+      "sin_alpha",
+      "sin_beta",
+      "Pb_ms",
+      "k_w",
+      "f_evo"
+    ],
+    "units": [
+      "dimensionless",
+      "km/s",
+      "km",
+      "dimensionless",
+      "dimensionless",
+      "dimensionless",
+      "ms",
+      "dimensionless",
+      "dimensionless"
+    ],
+    "source_sha256": "4e9005c42d9ce978728927a1f8e33c359a135ca7fe0a0cf5cda805cb96fb1892",
+    "export_sha256": "0615a309d99108b187da92b26b4edad706265c2f5e87e4a1070ecc4d64205fdf"
+  },
+  {
+    "path": "results/evidence/gamma_fixed/posterior_equal_zero.pkl",
+    "portable_path": "results/portable_npz/evidence/gamma_fixed/posterior_equal_zero.npz",
+    "shape": [
+      12535,
+      5
+    ],
+    "columns": [
+      "k_gamma",
+      "theta_gamma",
+      "Pb_ms",
+      "k_w",
+      "f_evo"
+    ],
+    "units": [
+      "dimensionless",
+      "km/s",
+      "ms",
+      "dimensionless",
+      "dimensionless"
+    ],
+    "source_sha256": "ca0f593feba31639ef3c7998dc79534dc71469b2459d44a65e89c81fb540f4df",
+    "export_sha256": "9043f1a17a86b39eca5ce825fac96abb1b90edf51e05d5c60aad4f0bef00c4d8"
+  },
+  {
+    "path": "results/evidence/lognormal_fixed/posterior_equal_full.pkl",
+    "portable_path": "results/portable_npz/evidence/lognormal_fixed/posterior_equal_full.npz",
+    "shape": [
+      13655,
+      9
+    ],
+    "columns": [
+      "mu_log",
+      "sigma_log",
+      "R_eff",
+      "zeta",
+      "sin_alpha",
+      "sin_beta",
+      "Pb_ms",
+      "k_w",
+      "f_evo"
+    ],
+    "units": [
+      "natural log of velocity in km/s",
+      "dimensionless",
+      "km",
+      "dimensionless",
+      "dimensionless",
+      "dimensionless",
+      "ms",
+      "dimensionless",
+      "dimensionless"
+    ],
+    "source_sha256": "7866fa4da3fb8db28e89d88e735365b6976cc7f91fd316d70ba093fbb73705ef",
+    "export_sha256": "39b952278df64d09761124e820c336cb83fa348917523209e998ece236317cbf"
+  },
+  {
+    "path": "results/evidence/lognormal_fixed/posterior_equal_zero.pkl",
+    "portable_path": "results/portable_npz/evidence/lognormal_fixed/posterior_equal_zero.npz",
+    "shape": [
+      12665,
+      5
+    ],
+    "columns": [
+      "mu_log",
+      "sigma_log",
+      "Pb_ms",
+      "k_w",
+      "f_evo"
+    ],
+    "units": [
+      "natural log of velocity in km/s",
+      "dimensionless",
+      "ms",
+      "dimensionless",
+      "dimensionless"
+    ],
+    "source_sha256": "fa57b26d5fbeb6db7bd5899b778441415d77cfc0eb323121d2117a483d375efe",
+    "export_sha256": "e1c4860f3de0ec7309cf1ac6430ff20b74878c5ab77b0caeb81df381b9e762c0"
+  },
+  {
+    "path": "results/evidence/maxwell_fixed/posterior_equal_full.pkl",
+    "portable_path": "results/portable_npz/evidence/maxwell_fixed/posterior_equal_full.npz",
+    "shape": [
+      12071,
+      8
+    ],
+    "columns": [
+      "sigma_v",
+      "R_eff",
+      "zeta",
+      "sin_alpha",
+      "sin_beta",
+      "Pb_ms",
+      "k_w",
+      "f_evo"
+    ],
+    "units": [
+      "km/s",
+      "km",
+      "dimensionless",
+      "dimensionless",
+      "dimensionless",
+      "ms",
+      "dimensionless",
+      "dimensionless"
+    ],
+    "source_sha256": "ede3a4a4229a003a4cb0557a789dc034c3443a8ca1de1dfd58da14c32e6463a1",
+    "export_sha256": "3dbecabda5d99c8a26c5392963ece785f609a0192930137eb6a858443cfac0c7"
+  },
+  {
+    "path": "results/evidence/maxwell_fixed/posterior_equal_zero.pkl",
+    "portable_path": "results/portable_npz/evidence/maxwell_fixed/posterior_equal_zero.npz",
+    "shape": [
+      11399,
+      4
+    ],
+    "columns": [
+      "sigma_v",
+      "Pb_ms",
+      "k_w",
+      "f_evo"
+    ],
+    "units": [
+      "km/s",
+      "ms",
+      "dimensionless",
+      "dimensionless"
+    ],
+    "source_sha256": "e9dc992884144237f9ce6cd87ab4b3ff9a2afb781f2719d83910d5ece24e612e",
+    "export_sha256": "820b958847dda9577b5685d59c625d7c05f7ffaf981a026867510c63c9c46a4d"
+  },
+  {
+    "path": "results/evidence/maxwell_marginalized/posterior_equal_full.pkl",
+    "portable_path": "results/portable_npz/evidence/maxwell_marginalized/posterior_equal_full.npz",
+    "shape": [
+      12032,
+      10
+    ],
+    "columns": [
+      "sigma_v",
+      "R_eff",
+      "zeta",
+      "sin_alpha",
+      "sin_beta",
+      "Pb_ms",
+      "k_w",
+      "f_evo",
+      "M_sol",
+      "I_45"
+    ],
+    "units": [
+      "km/s",
+      "km",
+      "dimensionless",
+      "dimensionless",
+      "dimensionless",
+      "ms",
+      "dimensionless",
+      "dimensionless",
+      "solar masses",
+      "1e45 g cm^2"
+    ],
+    "source_sha256": "178a93d8b79a9326cbbbfcd2040f8eacd241bf40e5bfa85f871bb91355a8e57c",
+    "export_sha256": "0ec9a3bc7ac45aee978b9ef7f1a9abb7599aab729e48b4248954f3f601bc079e"
+  },
+  {
+    "path": "results/evidence/maxwell_marginalized/posterior_equal_zero.pkl",
+    "portable_path": "results/portable_npz/evidence/maxwell_marginalized/posterior_equal_zero.npz",
+    "shape": [
+      11381,
+      6
+    ],
+    "columns": [
+      "sigma_v",
+      "Pb_ms",
+      "k_w",
+      "f_evo",
+      "M_sol",
+      "I_45"
+    ],
+    "units": [
+      "km/s",
+      "ms",
+      "dimensionless",
+      "dimensionless",
+      "solar masses",
+      "1e45 g cm^2"
+    ],
+    "source_sha256": "0f974a49311d4f8e8adb5e069b20a54f6f8164f5fe5ade3c96d150c6c04c13d9",
+    "export_sha256": "9b7edf318e5afb384e6ca05e8dd49d397bc12908b2a9312856446d6ef3747cc4"
+  },
+  {
+    "path": "results/mcmc/posterior_all_77_10param.pkl",
+    "portable_path": "results/portable_npz/mcmc/posterior_all_77_10param.npz",
+    "shape": [
+      280000,
+      10
+    ],
+    "columns": [
+      "sigma_v",
+      "R_eff",
+      "zeta",
+      "sin_alpha",
+      "sin_beta",
+      "Pb_ms",
+      "k_w",
+      "f_evo",
+      "M_sol",
+      "I_45"
+    ],
+    "units": [
+      "km/s",
+      "km",
+      "dimensionless",
+      "dimensionless",
+      "dimensionless",
+      "ms",
+      "dimensionless",
+      "dimensionless",
+      "solar masses",
+      "1e45 g cm^2"
+    ],
+    "source_sha256": "d5e1c845ecb1a50b500f752fa5d8e1d9993c0bb7aa1dfb6fa85b31b9d8fb2306",
+    "export_sha256": "d989b096d9fcd623adf4bafc3db33c9c42f303fc40e3b467c45eb9bc684e2d32"
+  },
+  {
+    "path": "results/mcmc/posterior_all_77_11param.pkl",
+    "portable_path": "results/portable_npz/mcmc/posterior_all_77_11param.npz",
+    "shape": [
+      700000,
+      11
+    ],
+    "columns": [
+      "mu_v",
+      "sigma_v",
+      "R_eff",
+      "zeta",
+      "sin_alpha",
+      "sin_beta",
+      "Pb_ms",
+      "k_w",
+      "f_evo",
+      "M_sol",
+      "I_45"
+    ],
+    "units": [
+      "natural log of velocity in km/s",
+      "dimensionless",
+      "km",
+      "dimensionless",
+      "dimensionless",
+      "dimensionless",
+      "ms",
+      "dimensionless",
+      "dimensionless",
+      "solar masses",
+      "1e45 g cm^2"
+    ],
+    "source_sha256": "8c4b1a2ad56f35b81eaf5915ca8ca27432388d94ccc477684f9e7606bcceab80",
+    "export_sha256": "c674050818c8c7ab8aef5d5e9876064f55b1d1c3158d13924ac972402e00796e"
+  },
+  {
+    "path": "results/mcmc/posterior_all_77_G_11param.pkl",
+    "portable_path": "results/portable_npz/mcmc/posterior_all_77_G_11param.npz",
+    "shape": [
+      280000,
+      11
+    ],
+    "columns": [
+      "k_kick",
+      "theta_kick",
+      "R_eff",
+      "zeta",
+      "sin_alpha",
+      "sin_beta",
+      "Pb_ms",
+      "k_w",
+      "f_evo",
+      "M_sol",
+      "I_45"
+    ],
+    "units": [
+      "dimensionless",
+      "km/s",
+      "km",
+      "dimensionless",
+      "dimensionless",
+      "dimensionless",
+      "ms",
+      "dimensionless",
+      "dimensionless",
+      "solar masses",
+      "1e45 g cm^2"
+    ],
+    "source_sha256": "bec50308a44be3f60a21c1716b020f381471ad1b67d8e57631116c55bfe337e7",
+    "export_sha256": "f784e91cf4208a1793f88ad9211931dcaba48be7f1efdc4f16a30e2129f7447c"
+  },
+  {
+    "path": "results/mcmc/posterior_all_77_G_9param.pkl",
+    "portable_path": "results/portable_npz/mcmc/posterior_all_77_G_9param.npz",
+    "shape": [
+      280000,
+      9
+    ],
+    "columns": [
+      "k_kick",
+      "theta_kick",
+      "R_eff",
+      "zeta",
+      "sin_alpha",
+      "sin_beta",
+      "Pb_ms",
+      "k_w",
+      "f_evo"
+    ],
+    "units": [
+      "dimensionless",
+      "km/s",
+      "km",
+      "dimensionless",
+      "dimensionless",
+      "dimensionless",
+      "ms",
+      "dimensionless",
+      "dimensionless"
+    ],
+    "source_sha256": "45624b57a5190c3c01f5187a340ee68e414bcfc5bd741bcbd61d947363ce896c",
+    "export_sha256": "1496793b4c79fd8de32d5a3901ee4bc242cb3b8ef8748bd288d8cf0426b880a8"
+  },
+  {
+    "path": "results/mcmc/posterior_all_LN_77_9param.pkl",
+    "portable_path": "results/portable_npz/mcmc/posterior_all_LN_77_9param.npz",
+    "shape": [
+      280000,
+      9
+    ],
+    "columns": [
+      "mu_v",
+      "sigma_v",
+      "R_eff",
+      "zeta",
+      "sin_alpha",
+      "sin_beta",
+      "Pb_ms",
+      "k_w",
+      "f_evo"
+    ],
+    "units": [
+      "natural log of velocity in km/s",
+      "dimensionless",
+      "km",
+      "dimensionless",
+      "dimensionless",
+      "dimensionless",
+      "ms",
+      "dimensionless",
+      "dimensionless"
+    ],
+    "source_sha256": "85bcc62f49f29c019ee6794cf18edc2bbe46a80c84bbbeae3d541e982955571a",
+    "export_sha256": "7a3583ab5fed774711f1348c7efadb9d742ae4921d9898b9ede8c0e7fa863019"
+  },
+  {
+    "path": "results/mcmc/posterior_all_M_77_8param.pkl",
+    "portable_path": "results/portable_npz/mcmc/posterior_all_M_77_8param.npz",
+    "shape": [
+      280000,
+      8
+    ],
+    "columns": [
+      "sigma_v",
+      "R_eff",
+      "zeta",
+      "sin_alpha",
+      "sin_beta",
+      "Pb_ms",
+      "k_w",
+      "f_evo"
+    ],
+    "units": [
+      "km/s",
+      "km",
+      "dimensionless",
+      "dimensionless",
+      "dimensionless",
+      "ms",
+      "dimensionless",
+      "dimensionless"
+    ],
+    "source_sha256": "2f0f5f4a5eb1fc041bd174521c399f7a768cf090314ac904bf6531cc970cb0b3",
+    "export_sha256": "2c9b1ee039cb2388a137d8f5818fc5e434257b1215ec0ccd1e2cf9cb6c200425"
+  },
+  {
+    "path": "results/mcmc/posterior_young_47_10param.pkl",
+    "portable_path": "results/portable_npz/mcmc/posterior_young_47_10param.npz",
+    "shape": [
+      420000,
+      10
+    ],
+    "columns": [
+      "sigma_v",
+      "R_eff",
+      "zeta",
+      "sin_alpha",
+      "sin_beta",
+      "Pb_ms",
+      "k_w",
+      "f_evo",
+      "M_sol",
+      "I_45"
+    ],
+    "units": [
+      "km/s",
+      "km",
+      "dimensionless",
+      "dimensionless",
+      "dimensionless",
+      "ms",
+      "dimensionless",
+      "dimensionless",
+      "solar masses",
+      "1e45 g cm^2"
+    ],
+    "source_sha256": "169f3d69be602ae12a7de28296ce5e8366029ed291d5811b1ab72c1c7c1b5985",
+    "export_sha256": "b4ff0b9d3f5862c93c7e09b5637ed78f5d9548049499006717add2a82b4dc66d"
+  },
+  {
+    "path": "results/mcmc/posterior_young_47_11param.pkl",
+    "portable_path": "results/portable_npz/mcmc/posterior_young_47_11param.npz",
+    "shape": [
+      280000,
+      11
+    ],
+    "columns": [
+      "mu_v",
+      "sigma_v",
+      "R_eff",
+      "zeta",
+      "sin_alpha",
+      "sin_beta",
+      "Pb_ms",
+      "k_w",
+      "f_evo",
+      "M_sol",
+      "I_45"
+    ],
+    "units": [
+      "natural log of velocity in km/s",
+      "dimensionless",
+      "km",
+      "dimensionless",
+      "dimensionless",
+      "dimensionless",
+      "ms",
+      "dimensionless",
+      "dimensionless",
+      "solar masses",
+      "1e45 g cm^2"
+    ],
+    "source_sha256": "9cc82942fff2e903bc7f039182e7886c5f993bb03c6a2cdbd8532774d92d9178",
+    "export_sha256": "bd0277f916424a38dab14b748110dc17b377f8acbcdfb1b815815b5f4452681f"
+  },
+  {
+    "path": "results/mcmc/posterior_young_47_G_11param.pkl",
+    "portable_path": "results/portable_npz/mcmc/posterior_young_47_G_11param.npz",
+    "shape": [
+      420000,
+      11
+    ],
+    "columns": [
+      "k_kick",
+      "theta_kick",
+      "R_eff",
+      "zeta",
+      "sin_alpha",
+      "sin_beta",
+      "Pb_ms",
+      "k_w",
+      "f_evo",
+      "M_sol",
+      "I_45"
+    ],
+    "units": [
+      "dimensionless",
+      "km/s",
+      "km",
+      "dimensionless",
+      "dimensionless",
+      "dimensionless",
+      "ms",
+      "dimensionless",
+      "dimensionless",
+      "solar masses",
+      "1e45 g cm^2"
+    ],
+    "source_sha256": "40c2ac587e010a3d6f2065b30513995a81baceb0b1d2db2ea462b3e18715d0ec",
+    "export_sha256": "53677b33654f5361ab20cd90695b67a0e794a0297ee392c1aef846fee5084d12"
+  },
+  {
+    "path": "results/mcmc/posterior_young_47_G_9param.pkl",
+    "portable_path": "results/portable_npz/mcmc/posterior_young_47_G_9param.npz",
+    "shape": [
+      420000,
+      9
+    ],
+    "columns": [
+      "k_kick",
+      "theta_kick",
+      "R_eff",
+      "zeta",
+      "sin_alpha",
+      "sin_beta",
+      "Pb_ms",
+      "k_w",
+      "f_evo"
+    ],
+    "units": [
+      "dimensionless",
+      "km/s",
+      "km",
+      "dimensionless",
+      "dimensionless",
+      "dimensionless",
+      "ms",
+      "dimensionless",
+      "dimensionless"
+    ],
+    "source_sha256": "b0e679c873641c01f255faf98bc618455680940f7b5b0ae72caa12642a6b79e3",
+    "export_sha256": "949b281a4114719f33dd1badf86bd28e51c17f9004d17acacc84e902760fb80b"
+  },
+  {
+    "path": "results/mcmc/posterior_young_LN_47_9param.pkl",
+    "portable_path": "results/portable_npz/mcmc/posterior_young_LN_47_9param.npz",
+    "shape": [
+      420000,
+      9
+    ],
+    "columns": [
+      "mu_v",
+      "sigma_v",
+      "R_eff",
+      "zeta",
+      "sin_alpha",
+      "sin_beta",
+      "Pb_ms",
+      "k_w",
+      "f_evo"
+    ],
+    "units": [
+      "natural log of velocity in km/s",
+      "dimensionless",
+      "km",
+      "dimensionless",
+      "dimensionless",
+      "dimensionless",
+      "ms",
+      "dimensionless",
+      "dimensionless"
+    ],
+    "source_sha256": "4f3cfef3f2daa9759a07cfa38d6da9bee46a6668f886960e6fe0288ebede4d77",
+    "export_sha256": "10d6ae6ecc7dbccb457f15c586695bc70553d59f1cd11c39e8c822e1acbde75b"
+  },
+  {
+    "path": "results/mcmc/posterior_young_M_47_8param.pkl",
+    "portable_path": "results/portable_npz/mcmc/posterior_young_M_47_8param.npz",
+    "shape": [
+      420000,
+      8
+    ],
+    "columns": [
+      "sigma_v",
+      "R_eff",
+      "zeta",
+      "sin_alpha",
+      "sin_beta",
+      "Pb_ms",
+      "k_w",
+      "f_evo"
+    ],
+    "units": [
+      "km/s",
+      "km",
+      "dimensionless",
+      "dimensionless",
+      "dimensionless",
+      "ms",
+      "dimensionless",
+      "dimensionless"
+    ],
+    "source_sha256": "6a059cb559de2fcea097878b392ff6d101477288d65f0de018438a86b653a653",
+    "export_sha256": "4551cda5faef9a1c4e89ea94a7751c523853389c826202cb2c679a00ef1cef80"
+  },
+  {
+    "path": "results/single_kick/posterior_LSR_47_samples.pkl",
+    "portable_path": "results/portable_npz/single_kick/posterior_LSR_47_samples.npz",
+    "shape": [
+      4818,
+      6
+    ],
+    "columns": [
+      "R_kick_km",
+      "alpha_rad",
+      "beta_rad",
+      "gamma_rad",
+      "P_birth_s",
+      "tau_tilde"
+    ],
+    "units": [
+      "km",
+      "rad",
+      "rad",
+      "rad",
+      "s",
+      "dimensionless"
+    ],
+    "source_sha256": "bd3b7aa3c8374987f51b0252125ab6b962075be6ebc5b0084b1a9e81ec1552c2",
+    "export_sha256": "7f6ccfc31b981cdc6ba25dcf5b36a4cfceabffba20bd9197816972b6ca4eed65"
+  }
+]
