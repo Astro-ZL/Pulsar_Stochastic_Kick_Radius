@@ -72,7 +72,12 @@ mpl.rcParams.update({
     "ytick.direction": "in",
     "xtick.top": True,
     "ytick.right": True,
-    "legend.frameon": False,
+    "legend.frameon": True,
+    "legend.fancybox": False,
+    "legend.framealpha": 1.0,
+    "legend.facecolor": "white",
+    "legend.edgecolor": "0.35",
+    "legend.borderpad": 0.5,
 })
 
 grey = "#858585"
@@ -129,7 +134,6 @@ lsr_eb = ax.errorbar(
     zorder=3,
 )
 
-ax.set_title("(a) Velocity correction in the $P$–$V_\\perp$ plane", pad=6)
 ax.set_xlabel(r"$P$ (s)")
 ax.set_ylabel(r"$V_\perp$ (km s$^{-1}$)")
 ax.legend(
@@ -177,7 +181,6 @@ ax.text(
     va="top",
     fontsize=8.2,
 )
-ax.set_title("(b) Source-by-source comparison", pad=6)
 ax.set_xlabel(r"$V_{\perp,\rm helio}$ (km s$^{-1}$)")
 ax.set_ylabel(r"$V_{\perp,\rm LSR}$ (km s$^{-1}$)")
 ax.legend(loc="lower right", fontsize=7.6)
